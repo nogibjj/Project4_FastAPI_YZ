@@ -1,0 +1,17 @@
+# basic
+black
+pylint
+pytest
+kaggle
+
+# jupyter
+numpy
+panda
+matplotlib
+seaborn
+
+# web app
+flask
+flask_sqlalchemy
+flask_marshmallow
+marshmallow-sqlalchemy
