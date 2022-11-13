@@ -28,7 +28,7 @@ handler = Mangum(app)
 
 @app.get("/")
 async def root():
-    return {"message": "Welcome to my movie store app!"}
+    return {"message": "Welcome to my movie list app!"}
 
 
 @app.get("/random-movie")
@@ -52,7 +52,7 @@ async def movies_by_index(index: int):
 @app.get("/get-movie_by_title/{title}")
 async def get_movie_by_title(title: str):
     for movie in MOVIES:
-        if movie.title == title:
+        if movie.get('title') == title:
             return movie
 
     raise HTTPException(404, f"Movie title {title} not found in database.")
