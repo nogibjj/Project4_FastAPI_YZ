@@ -1,4 +1,6 @@
 # Project #4: Continuous Delivery of Flask/FastAPI Data Engineering API on AWS
+[![FastAPI CI/CD](https://github.com/nogibjj/Project4_FastAPI_YZ/actions/workflows/main.yml/badge.svg)](https://github.com/nogibjj/Project4_FastAPI_YZ/actions/workflows/main.yml)
+
 
 Create a Microservice that returns a JSON payload and performs a Data Engineering related task
 
