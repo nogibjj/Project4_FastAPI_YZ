@@ -21,6 +21,9 @@ uvicorn main:app --reload
 ```
 FastApi provides a console interface to look at all our apis on the server. Type "*/docs#*" after the root path.
 
+<img src=https://user-images.githubusercontent.com/110933007/201545836-4cbb850f-5eeb-4747-b26d-d0472a2bde4c.png width=70% height=70%>
+
+
 ### GitHub repo <-> AWS S3
 Pack all the dependencies for building this web app into a zip file, and uploaed the zip file to AWS S3 bucket. 
 ```
@@ -33,9 +36,11 @@ zip lambda_function.zip -u movies.json
 ### Lambda Function
 Create a lambda function, upload the code source from Amazon S3 location which holds the zip file. 
 
+Create several tests to make sure it is working.
+
 **NOTE:** Change the lambda handler name to be the same as our *file_name.handler_name*. This is because the Lambda function handler is the method in your function code that processes events. When your function is invoked, Lambda runs the handler method.
 
-Create several tests to make sure it is working.
+![image](https://user-images.githubusercontent.com/110933007/201545909-824f6ce8-56ea-4ab3-b7cb-390a22db267a.png)
 
 
 ### Deploy the web app
